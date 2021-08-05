@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .seccion-1 {
+    background-image: url("./puntitos.svg");
+    width: 100%;
+    padding:18px 20px 0px 18px
+  }
+  .barrita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    max-width: 75px;
+  }
+  .burger {
+    width: 40px;
+  }
+  .opciones-burger {
+    display: none;
+  }
+  .bienvenida-y-avatar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    max-width: 290px;
+  }
+  .avatar{
+    width: 318px;
+  }
+  @media (min-width: 769px) {
+    .seccion-1 {
+      padding:36px 80px 0px 80px
+    }
+  
+    .burger {
+      display: none;
+    }
+    .opciones-burger {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo {
+      width: auto;
+    }
+    .label-barrita {
+      margin: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+    }
+    .bienvenida-y-avatar{
+      flex-direction:row;
+      justify-content: space-between;
+      margin: 0px 80px
+    }
+    .titulo{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      text-align:left
+    }
+    .avatar{
+      max-width: 435px;
+    }
+  }
+
+  .seccion-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    padding:55px 0px 68px 0px;
+  }
+  .contenedor-seccion-2{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0px;
+    width: 100%;
+  }
+  .contenedor-soy{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-soy{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FAFAFA;
+    margin:0px
+  }
+  .algo-de-mi{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 312px;
+    color: #FAFAFA;
+    padding:0px;
+    margin:41px 0px 57px 0px
+  }
+  .logo-ok{
+    height: 80px;
+  }
+  @media (min-width: 769px) {
+    .contenedor-seccion-2{
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-width: 833px;
+    }
+    .logo-ok{
+      height: 211px;
+    }
+    .soy-matias{
+      align-items: flex-start;
+    }
+    .contenedor-soy{
+      align-items:flex-start
+    }
+    .algo-de-mi{
+      font-size: 24px;
+      width: 532px;
+      max-width: none;
+    }
+  }
+  
+  .seccion-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 65px 0px;
+    width: 100%;
+
+  }
+  .contenedor-seccion-3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .titulo-servicios{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  .servicios-varios{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px;
+  }
+  .servicio{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+  }
+  .logo-pc{
+    width: 138px;
+  }
+  .titulo-servicio{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .descripcion-servicio{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 262px;
+    text-align: center;
+  }
+  @media (min-width: 769px) {
+    .seccion-3{
+      padding: 59px 0px 100px 0px;
+    }
+    .titulo-servicios{
+      font-size: 48px;
+      margin-bottom: 80px;
+    }
+    .servicios-varios{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1440px;
+    }
+  }
+
+  
+  .seccion-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    flex-direction: column;
+    background-color: #141414;
+  }
+  .escribime{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FAFAFA;
+    margin: 0px 0px 60px 0px;
+    padding: 0px;
+  }
+  .form {
+    display: grid;
+    gap: 27px;
+    width: 100%;
+    max-width: 376px;
+  }
+  .label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    padding: 0px;
+    margin-bottom: 9px;
+    color: #FAFAFA;
+  }
+  .boton {
+    background-color: #FFD953;
+    font-size: 18px;
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 33px;
+  }
+  .input-email,
+  .textarea,.input-nombre {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    margin:0px;
+    border-style: inset;
+  }
+  .input-email,.input-nombre {
+    height: 45px;
+  }
+  .textarea {
+    height: 113px;
+    resize: none;
+  }
+  @media (min-width: 769px) {
+    .seccion-4 {
+      padding: 116px 0px;
+      flex-direction: row;
+      gap: 77px;
+      align-items: flex-start;
+    }
+    .escribime{
+      font-size: 48px;
+    }
+  }
+  
+  .seccion-5{
+    display:flex;
+    background-color: #DBDBDB;
+    flex-direction: column;
+    gap:89px;
+    padding:53px 0px 119px 20px;
+  }
+  .copyright{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .label-red-social{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .redes-sociales{
+    display:grid;
+    gap:29px
+  }
+  .instagram,.linkedin,.github{
+    display: flex;
+    align-items: center;
+    gap:8px
+  }
+  @media (min-width: 769px) {
+    .seccion-5{
+      background-image: url("imagenes/puntitos\ \(1\).png");
+      flex-direction: row;
+      justify-content: space-between;
+      padding:95px 215px 95px 80px  }
+  }
